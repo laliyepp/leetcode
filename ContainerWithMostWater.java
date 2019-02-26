@@ -1,4 +1,8 @@
-    class ContainerWithMostWater {
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class ContainerWithMostWater {
+    public class Solution {
         public int maxArea(int[] height) {
             int[][] heightList = new int[height.length][2];
             int maxArea=-1;
@@ -25,7 +29,8 @@
                     maxArea=Math.max(maxArea,(right-left)*heightList[j][1]);
                 }
             }
-            
+
             return maxArea;
         }
     }
+}
