@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class ContainerWithMostWater {
-    public class Solution {
+    class Solution {
         public int maxArea(int[] height) {
             int[][] heightList = new int[height.length][2];
             int maxArea=-1;
